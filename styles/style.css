@@ -139,16 +139,21 @@ header {
   width: 100px;
 }
 
+.search_wrap {
+  width: 215px;
+  height: 28px;
+}
+
 input[type="text"].instaSearch {
   font-family: proxima-nove, "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
   height: 30px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
   text-align: center;
   border: 1px solid #edeeee;
   background: #fafafa;
@@ -191,6 +196,11 @@ input:focus::-ms-input-placeholder {
   display: inline;
 }
 
+.story_container {
+  width: 641px;
+  border: 1px solid #dbdbdb;
+}
+
 .story_container ul {
   list-style-type: none;
   user-select: none;
@@ -216,8 +226,8 @@ input:focus::-ms-input-placeholder {
 }
 
 .story_container ul li .story {
-  width: 75px;
-  height: 75px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: (255, 255, 255, 0.75);
   padding: 1px;
@@ -251,5 +261,57 @@ input:focus::-ms-input-placeholder {
   max-width: 85px;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.post-1 {
+  margin-top: 24px;
+  width: 641px;
+  height: 941px;
+  border: 1px solid #dbdbdb;
+}
+
+.post-top {
+  display: flex;
+}
+
+.avator .name .ellipsis {
+  flex: none;
+}
+
+.avator {
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.ellipsis {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.avator img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.post-img img {
+  width: 614px;
+  height: 614px;
+}
+
+.button-wrap {
+  width: 40px;
+  height: 40px;
+}
+
+.post-button {
+  display: flex;
 }
