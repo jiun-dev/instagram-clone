@@ -128,7 +128,11 @@ table {
   border-spacing: 0;
 }
 
-/* css reset */
+/* header */
+
+body {
+  background-color: #fafafa;
+}
 
 header {
   display: flex;
@@ -192,29 +196,27 @@ input:focus::-ms-input-placeholder {
   color: #c9cbcc;
 }
 
-.icon > ul > li {
-  display: inline;
-}
+/* story */
 
 .story_container {
-  width: 641px;
+  width: 614px;
   border: 1px solid #dbdbdb;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 .story_container ul {
   list-style-type: none;
   user-select: none;
   display: flex;
+
   overflow-y: auto;
   padding: 20px 0;
 }
 
 .story_container ul li {
   padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .story_container ul li:first-child {
@@ -264,15 +266,35 @@ input:focus::-ms-input-placeholder {
   margin-top: 10px;
 }
 
+.has-story {
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* section */
+
+.icon > ul > li {
+  display: inline;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
 .post-1 {
   margin-top: 24px;
-  width: 641px;
+  width: 614px;
   height: 941px;
   border: 1px solid #dbdbdb;
 }
 
 .post-top {
   display: flex;
+  height: 60px;
 }
 
 .avator .name .ellipsis {
@@ -280,20 +302,21 @@ input:focus::-ms-input-placeholder {
 }
 
 .avator {
+  margin-top: 10px;
   margin-left: 10px;
   overflow: hidden;
 }
 
 .name {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 10px;
 }
 
 .ellipsis {
   margin-left: auto;
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .avator img {
@@ -312,6 +335,15 @@ input:focus::-ms-input-placeholder {
   height: 40px;
 }
 
+.post-bottom {
+  height: 237px;
+}
+
 .post-button {
   display: flex;
+  height: 40px;
+}
+
+.comments {
+  height: 56px;
 }
